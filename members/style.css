@@ -53,6 +53,7 @@ button {
     width: 1200px;
     gap: 20px;
     text-align: center;
+    margin: 20px auto 0 auto;
 }
 
 .card-body {
