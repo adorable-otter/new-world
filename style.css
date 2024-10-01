@@ -1,18 +1,24 @@
 body {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 }
 
-
+#main {
+    width: 1200px;
+}
 
 .title {
     border: 5px solid black;
-    padding: 50px;
-    text-align: center;
+    /* padding: 50px; */
+    /* text-align: center; */
     color: white;
-    padding-left: 250px;
-    padding-bottom: 0px;
-    
-
+    /* padding-left: 250px; */
+    /* padding-bottom: 0px; */
+    width: 34%;
+    text-align: center;
 }
 
 
@@ -21,11 +27,15 @@ body {
     margin-left: 250px;
 }
 
+.main-img {
+    width: 100%;
+}
+
 .icon {
     width: 50px;
-    position: relative;
-    left: 400px;
-    top: 20px;
+    /* position: relative; */
+    /* left: 400px; */
+    /* top: 20px; */
 }
 
 h2 {
@@ -35,20 +45,42 @@ h2 {
 }
 
 button {
-    padding: 0px;
-    box-shadow: inset;
-    position: relative;
-    right: 250px;
-    top: 20px;
+    /* padding: 0px; */
+    /* box-shadow: inset; */
+    /* position: relative; */
+    /* right: 250px; */
+    /* top: 20px; */
 }
 
 #bgm {
-    margin-right: 80%;
+    /* margin-right: 80%; */
     border: none;
-
+    /* background-color: red; */
+    /* width: 40px; */
+    box-shadow: inset;
+    padding: 0;
+    margin-right: auto;
+    /* width: 33%; */
 }
 
 a{
     color: black;
     text-decoration: none;
+}
+
+.header {
+    display: flex;
+    width: 1200px;
+    /* width: 80%; */
+    /* justify-content: space-between; */
+    align-items: baseline;
+    /* alig */
+    
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
+    align-self: center;
 }
