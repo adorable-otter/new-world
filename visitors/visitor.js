@@ -8,10 +8,19 @@ const container = document.getElementById('container');
 
 
 addBtn.addEventListener('click', function() {
-    const text = userInput.value; 
+    const text = userInput.value;
     const paragraph = document.createElement('p'); 
     paragraph.textContent = text; 
     container.appendChild(paragraph); 
     userInput.value = ''; 
 });
+
+addBtn.addEventListener('Enter', function() {
+    const text = userInput.value;
+    const paragraph = document.createElement('p'); 
+    paragraph.textContent = text; 
+    container.appendChild(paragraph); 
+    userInput.value = ''; 
+});
+
 
