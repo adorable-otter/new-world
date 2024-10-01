@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+}
+
+
+
+.title {
+    border: 5px solid black;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    padding-left: 250px;
+    padding-bottom: 0px;
+    
+
+}
+
+
+
+.photo {
+    margin-left: 250px;
+}
+
+.icon {
+    width: 50px;
+    position: relative;
+    left: 400px;
+    top: 20px;
+}
+
+h2 {
+    background-color: yellow;
+    text-align: center;
+    word-spacing: 250px
+}
+
+button {
+    padding: 0px;
+    box-shadow: inset;
+    position: relative;
+    right: 250px;
+    top: 20px;
+}
+
+#bgm {
+    margin-right: 80%;
+    border: none;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
