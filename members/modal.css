@@ -1,84 +1,4 @@
 
-img {
-    max-width: 100%;
-}
-
-h1 {
-    text-align: center;
-    font-size: 80px;
-}
-
-body {
-    background-color: black;
-    font-family: "Black Han Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.title {
-    border: 5px solid black;
-    padding: 50px;
-    text-align: center;
-    color: white;
-}
-
-.icon {
-    width: 50px;
-    position: relative;
-    left: 400px;
-    top: 20px;
-}
-
-h2 {
-    background-color: yellow;
-    text-align: center;
-    word-spacing: 250px
-}
-
-button {
-    padding: 0px;
-    box-shadow: inset;
-    position: relative;
-    margin-left: 0px;
-}
-
-#bgm {
-    margin-right: 80%;
-    border: none;
-}
-
-.mycards {
-    display: flex;
-    justify-content: center;
-    width: 1200px;
-    gap: 20px;
-    text-align: center;
-    margin: 20px auto 0 auto;
-    cursor: pointer;
-}
-
-.card img {
-    cursor: pointer;
-}
-
-.card:hover img {
-    filter: brightness(1.4);
-}
-
-.card-body {
-    padding: 10px;
-}
-
-.card-title {
-    font-size: 40px;
-    margin: 0;
-}
-
 #modalContainer1 {
     width: 100%;
     height: 100%;
@@ -125,7 +45,9 @@ button {
 
 #modalContent2 {
     position: absolute;
-    background-color: rgb(242, 250, 138);
+    background-image: url('https://i.pinimg.com/564x/ac/b9/9c/acb99cad607ce39cdaabee3dc141c2a0.jpg');
+    background-size: cover;
+    background-position: center;
     width: 40%;
     height: 40%;
     padding: 15px;
@@ -143,7 +65,7 @@ button {
     position: absolute;
     width: 100px;
     bottom: 30px;
-    right: 50px;
+    right: 100px;
 }
 
 #modalContainer3 {
