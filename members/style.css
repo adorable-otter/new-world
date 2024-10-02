@@ -56,6 +56,14 @@ button {
     margin: 20px auto 0 auto;
 }
 
+.card img {
+    cursor: pointer;
+}
+
+.card:hover img {
+    filter: brightness(1.4);
+}
+
 .card-body {
     padding: 10px;
 }
