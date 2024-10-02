@@ -29,6 +29,3 @@ member5.addEventListener('click', () => {
 modalCloseButton.addEventListener('click', () => {
     $('#modalContainer').toggle();
 });
-
-// document.querySelector('')
-

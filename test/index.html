@@ -9,7 +9,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=East+Sea+Dokdo&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
 </head>
 
 <body>
@@ -36,7 +37,7 @@
     <div class="mycards">
         <div class="row row-cols-1 row-cols-md-5 g-4">
             <div class="col">
-                <div class="card">
+                <div class="card" id="member1">
                     <img src="https://i.namu.wiki/i/9yu6BKdqR2WSPgT93ypgf7Z4F6ieJJWibWl5lugTiH_JsPmzB2Rhz7vfkgRa6Wg7Q1ZLY_WLa1LgQIL74t7nXg.webp"
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -45,7 +46,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card" id="member2">
                     <img src="https://i.namu.wiki/i/UGdhvwVlI9XUD-rpt4Sg7Fl_7MJTCoa5VI4QHrxexNJs07EMlMSX7mrHmyUmUYWbmU1T8wNedgyamJIOF5MpgMWqNbtTOwsk35h8LgWFeUxXqzen195PbY3U3xliij8Nm4UotLqmw0jJe_kB2Xx5Pw.webp"
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -54,7 +55,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card" id="member3">
                     <img src="https://i.namu.wiki/i/lXs_UOYYUpW-X6mjV_1VehLIEeWTOO3LaA2TJ4OoAbx84hjxR7F2yR9CySKYLn9iYzc2TxlNZfD0DLTiArtJjOwmCu08cOpMris26q4PxKcQJWwb-L9pi1V1AV-IziI1pFG-2-zlcvmR0SJjTQyexQ.webp"
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -63,7 +64,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card" id="member4">
                     <img src="https://i.namu.wiki/i/CP0jFxo-l6_YJEy6eQzOa-obl_4g1blz666hx0vkAVIMPzxJev99w5GE22WRYJ17Xgo4WnPy5XBkDzeInODJtbHeRPkV5au-40-AwYjR8ZKI3oveuXspRHCn9iwP8_iXMqMOY0_7IgH_xNdT7OwJWg.webp"
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -72,7 +73,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
+                <div class="card" id="member5">
                     <img src="https://i.namu.wiki/i/mj_cuS26pRy6O0kGAzaTmEiisstvAgHWm2J-3_QL4hrI-yhjOeOcfe3AizEIUZoxB9jjhyjpVuGVUaFA7boPzgUNDGaZ8Q5eVUCu1wp_8zbToL-r9mjH9JeflP19K5RssKbzaNv8KJeC6ARrQ9Rw-w.webp"
                         class="card-img-top" alt="...">
                     <div class="card-body">
@@ -81,9 +82,22 @@
                 </div>
             </div>
         </div>
+
+        <div id="modalContainer" class="hidden">
+            <div id="modalContent">
+                <p>이름: </p>
+                <p>MBTI: </p>
+                <p>E-mail: </p>
+                <p>Github: </p>
+                <p>블로그: </p>
+                <p>협업 스타일: </p>
+                <p>TMI: </p>
+                <button id="modalCloseButton">닫기</button>
+            </div>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="modal.js"></script>
 </body>
 
 </html>
