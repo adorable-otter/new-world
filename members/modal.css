@@ -1,3 +1,7 @@
+img {
+    max-width: 100%;
+}
+
 h1 {
     text-align: center;
     font-size: 80px;
@@ -117,9 +121,9 @@ button {
 
 #modalContent2 {
     position: absolute;
-    background-color: #ffffff;
-    width: 400px;
-    height: 400px;
+    background-color: yellow;
+    width: 40%;
+    height: 40%;
     padding: 15px;
     display: flex;
     top: 50%;
@@ -128,6 +132,28 @@ button {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    border: 2px solid black;
+}
+
+#eunhyeImage1 {
+    position: absolute;
+    width: 100px;
+    top: 15px;
+    right: 15px;
+}
+
+#eunhyeImage2 {
+    position: absolute;
+    width: 150px;
+    top: 15px;
+    right: 15px;
+}
+
+#eunhyeImage3 {
+    position: absolute;
+    width: 150px;
+    top: 15px;
+    right: 50%;
 }
 
 #modalContainer3 {
