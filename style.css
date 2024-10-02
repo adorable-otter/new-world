@@ -1,13 +1,23 @@
 body {
     background-color: black;
     display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: black;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    width: 1200px;
+}
+
+.container > * {
+    width: 100%;
 }
 
 #main {
-    width: 1200px;
+    /* width: 1200px; */
 }
 
 .title {
@@ -17,11 +27,9 @@ body {
     color: white;
     /* padding-left: 250px; */
     /* padding-bottom: 0px; */
-    width: 34%;
-    text-align: center;
+    /* width: 34%; */
+    /* text-align: center; */
 }
-
-
 
 .photo {
     margin-left: 250px;
@@ -32,10 +40,25 @@ body {
 }
 
 .icon {
-    width: 50px;
+    width: 35px;
     /* position: relative; */
     /* left: 400px; */
-    /* top: 20px; */
+    /* bottom: 5px; */
+    height: 25px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.icons :nth-child(2) {
+    height: 20px;
+    width: 29px;
+    position: relative;
+    bottom: 0.1px;
+    top:5px;
 }
 
 h2 {
@@ -74,13 +97,8 @@ a{
     /* width: 80%; */
     /* justify-content: space-between; */
     align-items: baseline;
+    justify-content: center;
     /* alig */
     
 }
 
-.icons {
-    display: flex;
-    justify-content: flex-end;
-    width: 33%;
-    align-self: center;
-}
