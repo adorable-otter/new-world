@@ -11,6 +11,8 @@
         rel="stylesheet"> -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -23,7 +25,6 @@
                 <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-2038874-1720087.png">
                 <img class="icon" src="https://cdn.icon-icons.com/icons2/2429/PNG/512/figma_logo_icon_147289.png">
             </div>
-
             <div class="title">신셰계 프로젝트</div>
             <div class="bgm-wrap">
                 <button id="bgm">⏯️</button>
@@ -91,9 +92,121 @@
                 </div>
             </div>
         </div>
-    </div>
 
-        <script src="script.js"></script>
+
+        <div class="mycards">
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="col">
+                    <div class="card" id="member1">
+                        <img src="https://i.namu.wiki/i/9yu6BKdqR2WSPgT93ypgf7Z4F6ieJJWibWl5lugTiH_JsPmzB2Rhz7vfkgRa6Wg7Q1ZLY_WLa1LgQIL74t7nXg.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">박상기</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="member2">
+                        <img src="https://i.namu.wiki/i/UGdhvwVlI9XUD-rpt4Sg7Fl_7MJTCoa5VI4QHrxexNJs07EMlMSX7mrHmyUmUYWbmU1T8wNedgyamJIOF5MpgMWqNbtTOwsk35h8LgWFeUxXqzen195PbY3U3xliij8Nm4UotLqmw0jJe_kB2Xx5Pw.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">정은혜</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="member3">
+                        <img src="https://i.namu.wiki/i/lXs_UOYYUpW-X6mjV_1VehLIEeWTOO3LaA2TJ4OoAbx84hjxR7F2yR9CySKYLn9iYzc2TxlNZfD0DLTiArtJjOwmCu08cOpMris26q4PxKcQJWwb-L9pi1V1AV-IziI1pFG-2-zlcvmR0SJjTQyexQ.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">박준석</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="member4">
+                        <img src="https://i.namu.wiki/i/CP0jFxo-l6_YJEy6eQzOa-obl_4g1blz666hx0vkAVIMPzxJev99w5GE22WRYJ17Xgo4WnPy5XBkDzeInODJtbHeRPkV5au-40-AwYjR8ZKI3oveuXspRHCn9iwP8_iXMqMOY0_7IgH_xNdT7OwJWg.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">강대은</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="member5">
+                        <img src="https://i.namu.wiki/i/mj_cuS26pRy6O0kGAzaTmEiisstvAgHWm2J-3_QL4hrI-yhjOeOcfe3AizEIUZoxB9jjhyjpVuGVUaFA7boPzgUNDGaZ8Q5eVUCu1wp_8zbToL-r9mjH9JeflP19K5RssKbzaNv8KJeC6ARrQ9Rw-w.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">신상용</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modalContainer1" class="hidden">
+                <div id="modalContent1">
+                    <p>이름: 박상기</p>
+                    <p>MBTI: INFP</p>
+                    <p>E-mail: 1</p>
+                    <p>Github: 1</p>
+                    <p>블로그: 1</p>
+                    <p>협업 스타일: 리더형</p>
+                    <p>TMI: </p>
+                    <button id="modalCloseButton1">닫기</button>
+                </div>
+            </div>
+            <div id="modalContainer2" class="hidden">
+                <div id="modalContent2">
+                    <p>이름: 정은혜</p>
+                    <p>MBTI: ENTJ</p>
+                    <p>E-mail: 2</p>
+                    <p>Github: 2</p>
+                    <p>블로그: 2</p>
+                    <p>협업 스타일: 적극 참여형</p>
+                    <p>TMI: </p>
+                    <button id="modalCloseButton2">닫기</button>
+                </div>
+            </div>
+            <div id="modalContainer3" class="hidden">
+                <div id="modalContent3">
+                    <p>이름: 박준석</p>
+                    <p>MBTI: INFJ</p>
+                    <p>E-mail: 3</p>
+                    <p>Github: 3</p>
+                    <p>블로그: 3</p>
+                    <p>협업 스타일: 적극 참여형</p>
+                    <p>TMI: </p>
+                    <button id="modalCloseButton3">닫기</button>
+                </div>
+            </div>
+            <div id="modalContainer4" class="hidden">
+                <div id="modalContent4">
+                    <p>이름: 강대은</p>
+                    <p>MBTI: 불신론자</p>
+                    <p>E-mail: 4</p>
+                    <p>Github: 4</p>
+                    <p>블로그: 4</p>
+                    <p>협업 스타일: 적극 참여형</p>
+                    <p>TMI: </p>
+                    <button id="modalCloseButton4">닫기</button>
+                </div>
+            </div>
+            <div id="modalContainer5" class="hidden">
+                <div id="modalContent5">
+                    <p>이름: 신상용</p>
+                    <p>MBTI: INFJ</p>
+                    <p>E-mail: 5</p>
+                    <p>Github: 5</p>
+                    <p>블로그: 5</p>
+                    <p>협업 스타일: 적극 참여형</p>
+                    <p>TMI: </p>
+                    <button id="modalCloseButton5">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
 </body>
 
 </html>
