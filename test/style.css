@@ -54,6 +54,7 @@ button {
     gap: 20px;
     text-align: center;
     margin: 20px auto 0 auto;
+    cursor: pointer;
 }
 
 .card-body {
@@ -63,4 +64,36 @@ button {
 .card-title {
     font-size: 40px;
     margin: 0;
+}
+
+#modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(221, 82, 82, 0.5);
+    overflow: auto;
+}
+
+#modalContent {
+    position: absolute;
+    background-color: #ffffff;
+    width: 300px;
+    height: 320px;
+    padding: 15px;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#modalContainer.hidden {
+    display: none;
 }
