@@ -155,7 +155,7 @@ p{
 
 #modalContent5 {
     position: absolute;
-    background-image: url('https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/d825/ba383092d267f5a5273a3b4bf46e48a49bb1d31aeac922a4fb312529e848.jpg');
+    background-image: url('https://social-phinf.pstatic.net/20210112_218/1610429401515GVNBd_PNG/8.png');
     width: 400px;
     height: 400px;
     padding: 15px;
@@ -163,6 +163,9 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #70ccfd; 
+    font-weight: bold;
+    font-size: 15px;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
