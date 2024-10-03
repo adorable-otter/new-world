@@ -1,3 +1,6 @@
+p{
+    margin-bottom: 0.5rem;
+}
 
 #modalContainer1 {
     width: 100%;
@@ -31,6 +34,7 @@
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 16px;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -39,18 +43,18 @@
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(221, 82, 82, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     overflow: auto;
 }
 
 #modalContent2 {
     position: absolute;
-    background-image: url('https://i.pinimg.com/564x/ac/b9/9c/acb99cad607ce39cdaabee3dc141c2a0.jpg');
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-vaporwave-vintage-lineal_52683-58478.jpg');
     background-size: cover;
     background-position: center;
-    width: 40%;
-    height: 40%;
-    padding: 15px;
+    width: 900px;
+    height: 600px;
+    padding: 0 15px 50px 280px;
     display: flex;
     top: 50%;
     left: 50%;
@@ -58,17 +62,16 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    border: 2px solid black;
+    border: 5px solid black;
 }
 
-#eunhyeImage {
-    position: absolute;
-    width: 100px;
-    bottom: 30px;
-    right: 100px;
+.glow {
+    color: black; 
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8), 
+        0 0 10px rgba(255, 255, 255, 0.6), 
+        0 0 15px rgba(255, 255, 255, 0.4); 
 }
-
-
 
 #modalContainer3 {
     width: 100%;
@@ -84,6 +87,10 @@
 }
 
 #modalContent3 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCT_9xFb3QQGsaRIuVGNYI4CqADAuHMYF3A&s');
+    background-size: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     background-color: #ffffff;
     width: 400px;
@@ -96,6 +103,10 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #modalContainer4 {
@@ -127,6 +138,9 @@
 }
 
 #modalContainer5 {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -141,7 +155,7 @@
 
 #modalContent5 {
     position: absolute;
-    background-color: #ffffff;
+    background-image: url('https://social-phinf.pstatic.net/20210112_218/1610429401515GVNBd_PNG/8.png');
     width: 400px;
     height: 400px;
     padding: 15px;
@@ -149,6 +163,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #70ccfd; 
+    font-weight: bold;
+    font-size: 15px;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
