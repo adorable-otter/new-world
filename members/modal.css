@@ -87,6 +87,10 @@ p{
 }
 
 #modalContent3 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCT_9xFb3QQGsaRIuVGNYI4CqADAuHMYF3A&s');
+    background-size: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     background-color: #ffffff;
     width: 400px;
@@ -99,6 +103,10 @@ p{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #modalContainer4 {
@@ -130,6 +138,9 @@ p{
 }
 
 #modalContainer5 {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -144,7 +155,7 @@ p{
 
 #modalContent5 {
     position: absolute;
-    background-color: #ffffff;
+    background-image: url('https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/d825/ba383092d267f5a5273a3b4bf46e48a49bb1d31aeac922a4fb312529e848.jpg');
     width: 400px;
     height: 400px;
     padding: 15px;
