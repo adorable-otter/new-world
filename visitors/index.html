@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>방명록 홈페이지</title>
+    <title>댓글 기능</title>
 </head>
-<link rel="stylesheet" href="visitor.css">
-
 <body>
-    <div id = "container"></div>
-    <div>
-        <input type="text" class="user-input" placeholder="이름을 입력하세요">
-        <input type="text" class="user-input" placeholder="댓글을 입력하세요">
-        <button id = "addBtn">등록</button>
-    </div>
-    <script src="visitor.js"></script>
-</body>
+<link rel="stylesheet" href="visitor.css">
+<div>
+    <input class="user-input" type="text" placeholder="이름">
+    <input class="user-input" type="text" placeholder="댓글">
+    <button id="addBtn">댓글 추가</button>
+</div>
 
+<div id="container"></div>
+<script src="visitor.js"></script>
+</body>
 </html>
