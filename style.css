@@ -1,4 +1,5 @@
 body {
+
     background-color: black;
     display: flex;
     justify-content: center;
@@ -33,6 +34,58 @@ body {
 
 .photo {
     margin-left: 250px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    background-color: yellow;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.menu-item {
+    flex: 1 auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.wrap {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.main-img {
+    background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FXGRuc%2FbtsJTdNII6Q%2F0qe85fhul6x9xQFCMg77o1%2Fimg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .main-img {
@@ -41,6 +94,7 @@ body {
 
 .icon {
     width: 35px;
+
     /* position: relative; */
     /* left: 400px; */
     /* bottom: 5px; */
@@ -59,13 +113,17 @@ body {
     position: relative;
     bottom: 0.1px;
     top:5px;
+
+    height: 25px;
+
 }
 
-h2 {
-    background-color: yellow;
-    text-align: center;
-    word-spacing: 250px
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
 }
+
 
 button {
     /* padding: 0px; */
@@ -95,8 +153,34 @@ button {
     margin-right: auto;
     /* width: 33%; */
 }
+.icons :nth-child(2) {
+    height: 20px;
+    width: 29px;
+    position: relative;
+    bottom: 0.1px;
+    top: 5px;
+}
 
-a{
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+#bgm {
+    border: none;
+    box-shadow: inset;
+    padding: 0;
+    margin: 0 auto 10px 0;
+
+}
+
+a {
     color: black;
     text-decoration: none;
 }

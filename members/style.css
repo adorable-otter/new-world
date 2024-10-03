@@ -1,0 +1,29 @@
+.mycards {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    gap: 20px;
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+.mycards > * {
+    width:100%
+}
+
+.card img {
+    cursor: pointer;
+}
+
+.card:hover img {
+    filter: brightness(1.4);
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 40px;
+    margin: 0;
+}
