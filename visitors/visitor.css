@@ -4,7 +4,7 @@
     color: white;
 }
 
-.book > * {
+.book>* {
     width: 100%;
 }
 
@@ -16,27 +16,31 @@
     border-radius: 5px;
 }
 
-.page_header {
+.page-header {
     display: flex;
     flex-direction: row;
     background-color: gray;
-    height: 30px;
+    min-height: 40px;
     align-items: center;
 }
 
-.page_header__name {
+.page-header__name {
     margin: 0 10px 0 10px;
 }
 
-.page_header__update {
+.page-header__update {
     margin: 0 5px 0 auto;
 }
 
-.page_content {
+.page-header__save {
+    margin: 0 5px 0 auto;
+}
+
+.page-content {
     display: flex;
 }
 
-.page_content__img {
+.page-content__img {
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -47,7 +51,41 @@
     border: 1px solid gray;
 }
 
-.page_content__mesage {
+.page-content__comment{
     padding: 25px;
     line-height: 1.5;
+    flex: 1 auto;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.btn {
+    height: 30px;
+    width: 60px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.btn_primary {
+    background-color: #1d6be0;
+    color: white;
+}
+
+.btn_success {
+    background-color: #198754;
+    color: white;
+}
+
+.btn_delete {
+    background-color: #ca3357;
+    color: white;
+}
+
+.btn_hide{
+    display: none;
 }

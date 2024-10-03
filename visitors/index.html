@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>방명록 홈페이지</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="visitor.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-<link rel="stylesheet" href="visitor.css">
-<link rel="stylesheet" href="../style.css">
 
 <body>
     <div class="wrap">
@@ -43,20 +45,22 @@
             <button id="addBtn">등록</button>
         </div>
         <ul class="book">
-            <li class="book__page">
+            <!-- <li class="book__page">
                 <div class="page_header">
                     <div class="page_header__name">신상용</div>
                     <div class="page_header__date">( 24.10.03 10:00 )</div>
-                    <button class="page_header__update">수정</button>
-                    <button class="page_header__delete">삭제</button>
+                    <button class="page_header__update" data-name="update">수정</button>
+                    <button class="page_header__delete" data-name="delete">삭제</button>
+                    <button class="page_header__delete" data-name="save">저장</button>
+                    <button class="page_header__delete" data-name="cancel">취소</button>
                 </div>
                 <div class="page_content">
                     <div class="page_content__img"></div>
                     <div class="page_content__mesage">안녕 나는 상용핑 <br> 아재개그를 좋아해 핑</div>
                 </div>
-            </li>
+            </li> -->
         </ul>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="visitor.js"></script>
 </body>
 
