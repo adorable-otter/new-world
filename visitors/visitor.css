@@ -1,0 +1,54 @@
+/* p {
+    color: white;
+}
+
+html {
+    color: white;
+} */
+.book {
+    width: 1200px;
+    padding: 0;
+    color: white;
+}
+
+.book > * {
+    width: 100%;
+}
+
+.book__page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.page_header {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    height: 30px;
+    align-items: center;
+}
+
+.page_header__name {
+    margin: 0 10px 0 10px;
+}
+
+.page_content {
+    display: flex;
+}
+
+.page_content__img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/visitors/profile.png');
+    border: 1px solid gray;
+}
+
+.page_content__mesage {
+    padding: 25px;
+    line-height: 1.5;
+}

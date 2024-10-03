@@ -7,15 +7,77 @@
     <title>방명록 홈페이지</title>
 </head>
 <link rel="stylesheet" href="visitor.css">
+<link rel="stylesheet" href="../style.css">
 
 <body>
-    <div id = "container"></div>
-    <div>
-        <input type="text" class="user-input" placeholder="이름을 입력하세요">
-        <input type="text" class="user-input" placeholder="댓글을 입력하세요">
-        <button id = "addBtn">등록</button>
-    </div>
-    <script src="visitor.js"></script>
+    <div class="wrap">
+        <div class="container">
+            <div class="icons">
+                <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-html5-41-1175209.png?f=webp">
+                <img class="icon"
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-css-alt-3521367-2944811.png?f=webp">
+                <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-2038874-1720087.png">
+                <img class="icon" src="https://cdn.icon-icons.com/icons2/2429/PNG/512/figma_logo_icon_147289.png">
+            </div>
+            <div class="title">신셰계 프로젝트</div>
+            <div class="bgm-wrap">
+                <button id="bgm">⏯️</button>
+            </div>
+
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="../index.html">Team</a>
+                </div>
+                <div class="menu-item">
+                    <a href="../members/index.html">Members</a>
+                </div>
+                <div class="menu-item">
+                    <a href="index.html">Visitors</a>
+                </div>
+            </div>
+        </div>
+        <div id="container"></div>
+        <div>
+            <input type="text" class="user-input" placeholder="이름을 입력하세요">
+            <input type="text" class="user-input" placeholder="댓글을 입력하세요">
+            <button id="addBtn">등록</button>
+        </div>
+        <ul class="book">
+            <li class="book__page">
+                <div class="page_header">
+                    <div class="page_header__name">신상용</div>
+                    <div class="page_header__date">( 24.10.03 10:00 )</div>
+                </div>
+                <div class="page_content">
+                    <div class="page_content__img"></div>
+                    <div class="page_content__mesage">안녕 나는 상용핑 <br> 아재개그를 좋아해 핑</div>
+                </div>
+            </li>
+
+            <li class="book__page">
+                <div class="page_header">
+                    <div class="page_header__name">신상용</div>
+                    <div class="page_header__date">( 24.10.03 10:00 )</div>
+                </div>
+                <div class="page_content">
+                    <div class="page_content__img"></div>
+                    <div class="page_content__mesage">안녕 나는 상용핑 <br> 아재개그를 좋아해 핑</div>
+                </div>
+            </li>
+
+            <li class="book__page">
+                <div class="page_header">
+                    <div class="page_header__name">신상용</div>
+                    <div class="page_header__date">( 24.10.03 10:00 )</div>
+                </div>
+                <div class="page_content">
+                    <div class="page_content__img"></div>
+                    <div class="page_content__mesage">안녕 나는 상용핑 <br> 아재개그를 좋아해 핑</div>
+                </div>
+            </li>
+        </ul>
+
+        <script src="visitor.js"></script>
 </body>
 
 </html>
