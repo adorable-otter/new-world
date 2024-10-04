@@ -199,8 +199,6 @@ p {
     flex-direction: column;
 }
 
-
-
 #modalContainer.hidden {
     display: none;
 }
