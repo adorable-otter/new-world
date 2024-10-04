@@ -1,3 +1,6 @@
+.title{
+    margin-bottom: 33px;
+}
 .mycards {
     display: flex;
     justify-content: center;
