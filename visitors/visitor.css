@@ -1,6 +1,7 @@
-.title{
+.title {
     margin-bottom: 33px;
 }
+
 .book {
     width: 1200px;
     padding: 0;
@@ -14,7 +15,7 @@
 .book__page {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-top: 30px;
     border: 3px solid gray;
     border-radius: 5px;
 }
@@ -54,7 +55,7 @@
     border: 1px solid gray;
 }
 
-.page-content__comment{
+.page-content__comment {
     padding: 25px;
     line-height: 1.5;
     flex: 1 auto;
@@ -89,6 +90,6 @@
     color: white;
 }
 
-.btn_hide{
+.btn_hide {
     display: none;
 }

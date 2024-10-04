@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     book.addEventListener('click', handleBtnClickInPageHeader);
-    createBookPage({ name: '1', comment: '2' });
+    createBookPage({ name: '정청', comment: '어이 브라더' });
 });
 
 function handleBtnClickInPageHeader(e) {
