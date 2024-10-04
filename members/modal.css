@@ -199,6 +199,10 @@ p {
     flex-direction: column;
 }
 
+.modal-close5 {
+    align-self: flex-end;
+    
+}
 
 
 #modalContainer.hidden {
