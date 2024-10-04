@@ -109,14 +109,14 @@ p {
 }
 
 #modalContent3 {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCT_9xFb3QQGsaRIuVGNYI4CqADAuHMYF3A&s');
-    background-size: 400px;
+    background-image: url('https://i.pinimg.com/236x/9e/dd/f9/9eddf95f1f34d524d6ef62a610be71f9.jpg'); /* 수정된 URL */
+    background-size: 600px;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
     background-color: #ffffff;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     padding: 15px;
     display: flex;
     top: 50%;
@@ -127,7 +127,7 @@ p {
     flex-direction: column;
     color: #ffffff;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 22px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
