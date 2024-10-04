@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: "Black Han Sans", sans-serif;
 }
 
 .menu {
@@ -89,14 +90,10 @@ h1 {
 }
 
 #stop {
-    /* margin-right: 80%; */
     border: none;
-    /* background-color: red; */
-    /* width: 40px; */
     box-shadow: inset;
     padding: 0;
     margin-right: auto;
-    /* width: 33%; */
 }
 
 a {
