@@ -1,0 +1,91 @@
+.book {
+    width: 1200px;
+    padding: 0;
+    color: white;
+}
+
+.book>* {
+    width: 100%;
+}
+
+.book__page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    min-height: 40px;
+    align-items: center;
+}
+
+.page-header__name {
+    margin: 0 10px 0 10px;
+}
+
+.page-header__update {
+    margin: 0 5px 0 auto;
+}
+
+.page-header__save {
+    margin: 0 5px 0 auto;
+}
+
+.page-content {
+    display: flex;
+}
+
+.page-content__img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/visitors/profile.png');
+    padding: 25px;
+    margin-right: 10px;
+    border: 1px solid gray;
+}
+
+.page-content__comment{
+    padding: 25px;
+    line-height: 1.5;
+    flex: 1 auto;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.btn {
+    height: 30px;
+    width: 60px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.btn_primary {
+    background-color: #1d6be0;
+    color: white;
+}
+
+.btn_success {
+    background-color: #198754;
+    color: white;
+}
+
+.btn_delete {
+    background-color: #ca3357;
+    color: white;
+}
+
+.btn_hide{
+    display: none;
+}

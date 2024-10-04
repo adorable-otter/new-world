@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>댓글 기능</title>
+    <title>방명록</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="visitor.css">
+        <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-<link rel="stylesheet" href="visitor.css">
-<div>
-    <input class="user-input" type="text" placeholder="이름">
-    <input class="user-input" type="text" placeholder="댓글">
-    <button id="addBtn">댓글 추가</button>
-</div>
 
-<div id="container"></div>
-<script src="visitor.js"></script>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="icons">
+                <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-html5-41-1175209.png?f=webp">
+                <img class="icon"
+                    src="https://cdn.iconscout.com/icon/free/png-256/free-css-alt-3521367-2944811.png?f=webp">
+                <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-2038874-1720087.png">
+                <img class="icon" src="https://cdn.icon-icons.com/icons2/2429/PNG/512/figma_logo_icon_147289.png">
+            </div>
+            <div class="title">신셰계 프로젝트</div>
+            <div class="bgm-wrap">
+                <button id="bgm">⏯️</button>
+            </div>
+
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="../index.html">Team</a>
+                </div>
+                <div class="menu-item">
+                    <a href="../members/index.html">Members</a>
+                </div>
+                <div class="menu-item">
+                    <a href="index.html">Visitors</a>
+                </div>
+            </div>
+        </div>
+        <div id="container"></div>
+        <div>
+            <input type="text" class="user-input" placeholder="이름을 입력하세요">
+            <input type="text" class="user-input" placeholder="댓글을 입력하세요">
+            <button id="addBtn">등록</button>
+        </div>
+        <ul class="book">
+            <!-- <li class="book__page">
+                <div class="page_header">
+                    <div class="page_header__name">신상용</div>
+                    <div class="page_header__date">( 24.10.03 10:00 )</div>
+                    <button class="page_header__update" data-name="update">수정</button>
+                    <button class="page_header__delete" data-name="delete">삭제</button>
+                    <button class="page_header__delete" data-name="save">저장</button>
+                    <button class="page_header__delete" data-name="cancel">취소</button>
+                </div>
+                <div class="page_content">
+                    <div class="page_content__img"></div>
+                    <div class="page_content__mesage">안녕 나는 상용핑 <br> 아재개그를 좋아해 핑</div>
+                </div>
+            </li> -->
+        </ul>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="visitor.js"></script>
 </body>
 </html>
