@@ -8,10 +8,21 @@
     gap: 20px;
     text-align: center;
     margin: 20px auto 0 auto;
+    animation: fadeIn 2s ease-out;
 }
 
-.mycards > * {
-    width:100%
+.mycards>* {
+    width: 100%
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .card img {
