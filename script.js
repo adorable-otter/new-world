@@ -1,4 +1,4 @@
-const audio1=new Audio('file:C:\Users\five_cat\Desktop\new-world\Various Artists-21-Big Sleep.mp3');
+const audio1=new Audio('Big_Sleep.mp3');
 document.querySelector("#bgm").addEventListener("click",function(){
     
     
