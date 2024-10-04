@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: "Gowun Dodum", sans-serif;
 }
 
 .menu {
@@ -13,7 +14,8 @@ body {
 .menu-item {
     flex: 1 auto;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .wrap {
@@ -40,7 +42,7 @@ body {
 .title {
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -89,14 +91,10 @@ h1 {
 }
 
 #stop {
-    /* margin-right: 80%; */
     border: none;
-    /* background-color: red; */
-    /* width: 40px; */
     box-shadow: inset;
     padding: 0;
     margin-right: auto;
-    /* width: 33%; */
 }
 
 a {

@@ -13,12 +13,12 @@ p {
     align-items: center;
     background: rgba(0, 0, 0, 0.8);
     overflow: auto;
+    font-family: "Jua", sans-serif;
 }
 
 #modalContent1 {
     position: absolute;
     background-image: url('https://img.notionusercontent.com/s3/prod-files-secure%2F5d82c672-a5e1-49b9-923f-df15a9ab105c%2F2e1bcd62-2bb6-4ad3-a670-d292efb215cf%2FNJ_BubbleGum_41.jpg/size/w=1420?exp=1728085989&sig=0KLoeWd9Q8s-cffxfxbothTRvOgLG5IZordnDn-iVpw');
-    /* background-image: url('../bg.jpg'); */
     background-size: 175% 175%;
     background-position: left;
     background-repeat: no-repeat;
@@ -35,10 +35,9 @@ p {
     border-radius: 6px;
     color: rgb(61, 63, 62);
     text-align: left;
-    padding-left: 200px;
+    padding-left: 160px;
     font-weight: bold;
 }
-
 
 .modal-info {
     background-color: white;
@@ -76,7 +75,7 @@ p {
     background-position: center;
     width: 900px;
     height: 600px;
-    padding: 0 15px 50px 280px;
+    padding: 0 15px 20px 280px;
     display: flex;
     top: 50%;
     left: 50%;
@@ -84,15 +83,15 @@ p {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    border: 5px solid black;
+    border-radius: 6px;
 }
 
-.glow {
-    color: black;
-    text-shadow:
-        0 0 5px rgba(255, 255, 255, 0.8),
-        0 0 10px rgba(255, 255, 255, 0.6),
-        0 0 15px rgba(255, 255, 255, 0.4);
+.modal-close2 {
+    position: absolute;
+    top: 12.4%;
+    right: 22.7%;
+    border: 1.5px solid black;
+    padding: 0 5.5px 0 5.5px;
 }
 
 #modalContainer3 {
@@ -104,8 +103,9 @@ p {
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(221, 82, 82, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     overflow: auto;
+    font-family: "Jua", sans-serif;
 }
 
 #modalContent3 {
@@ -134,20 +134,28 @@ p {
 #modalContainer4 {
     width: 100%;
     height: 100%;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
     position: fixed;
     top: 0;
     left: 0;
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(221, 82, 82, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     overflow: auto;
+    font-family: "Jua", sans-serif;
 }
 
 #modalContent4 {
+    background-image: url('https://i.namu.wiki/i/DkJUgg_J_bMT5KKV4IdAA1pPE1PAbFG0m1Cv2ApCM5pUtR3hOsaukLP3Wg3PZqSDd6tnZnq2dYfhVViu6iwUcHl0tOTxQtgZB1BQt7ZnLd58TfIdeo9Mc3jCyqYQIowZRcSjirej8KCWIu57OuAqow.webp');
+    background-size: cover;
+    background-position: center;
     position: absolute;
     background-color: #ffffff;
-    width: 400px;
+    width: 600px;
     height: 400px;
     padding: 15px;
     display: flex;
@@ -157,6 +165,14 @@ p {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+}
+
+.modal-close4 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 1.5px solid black;
+    padding: 0 5.5px 0 5.5px;
 }
 
 #modalContainer5 {
@@ -171,15 +187,15 @@ p {
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(221, 82, 82, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     overflow: auto;
 }
 
 #modalContent5 {
     position: absolute;
     background-image: url('https://social-phinf.pstatic.net/20210112_218/1610429401515GVNBd_PNG/8.png');
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 525px;
     padding: 15px;
     display: flex;
     top: 50%;
@@ -193,6 +209,10 @@ p {
     flex-direction: column;
 }
 
+.modal-close5 {
+    align-self: flex-end;
+    
+}
 
 
 #modalContainer.hidden {

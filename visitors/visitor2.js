@@ -1,3 +1,5 @@
+
+
 const nameInput = document.getElementsByClassName('user-input')[0];
 const commentInput = document.getElementsByClassName('user-input')[1];
 const addBtn = document.getElementById('addBtn');
@@ -18,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     book.addEventListener('click', handleBtnClickInPageHeader);
-    createBookPage({ name: '1', comment: '2' });
+    createBookPage({ name: '정청', comment: '어이 브라더' });
 });
 
 function handleBtnClickInPageHeader(e) {
