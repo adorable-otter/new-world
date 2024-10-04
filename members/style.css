@@ -5,14 +5,14 @@
     gap: 20px;
     text-align: center;
     margin: 20px auto 0 auto;
-    animation: switchOn 2s ease-out;
+    animation: fadeIn 2s ease-out;
 }
 
 .mycards>* {
     width: 100%
 }
 
-@keyframes switchOn {
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
