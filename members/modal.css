@@ -39,7 +39,6 @@ p {
     font-weight: bold;
 }
 
-
 .modal-info {
     background-color: white;
     margin-top: auto;
@@ -178,7 +177,7 @@ p {
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(221, 82, 82, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     overflow: auto;
 }
 
