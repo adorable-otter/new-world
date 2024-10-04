@@ -167,6 +167,14 @@ p {
     flex-direction: column;
 }
 
+.modal-close4 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 1.5px solid black;
+    padding: 0 5.5px 0 5.5px;
+}
+
 #modalContainer5 {
     font-family: "Jua", sans-serif;
     font-weight: 400;
