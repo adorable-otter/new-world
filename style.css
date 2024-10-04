@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: "Black Han Sans", sans-serif;
+    font-family: "Gowun Dodum", sans-serif;
 }
 
 .menu {
@@ -14,7 +14,8 @@ body {
 .menu-item {
     flex: 1 auto;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .wrap {
@@ -41,7 +42,7 @@ body {
 .title {
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
 }
 
