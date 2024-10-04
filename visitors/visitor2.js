@@ -1,3 +1,5 @@
+
+
 const nameInput = document.getElementsByClassName('user-input')[0];
 const commentInput = document.getElementsByClassName('user-input')[1];
 const addBtn = document.getElementById('addBtn');
