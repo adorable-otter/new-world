@@ -76,7 +76,7 @@ p {
     background-position: center;
     width: 900px;
     height: 600px;
-    padding: 0 15px 50px 280px;
+    padding: 0 15px 20px 280px;
     display: flex;
     top: 50%;
     left: 50%;
@@ -84,15 +84,15 @@ p {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    border: 5px solid black;
+    border-radius: 6px;
 }
 
-.glow {
-    color: black;
-    text-shadow:
-        0 0 5px rgba(255, 255, 255, 0.8),
-        0 0 10px rgba(255, 255, 255, 0.6),
-        0 0 15px rgba(255, 255, 255, 0.4);
+.modal-close2 {
+    position: absolute;
+    top: 12.4%;
+    right: 22.7%;
+    border: 1.5px solid black;
+    padding: 0 5.5px 0 5.5px;
 }
 
 #modalContainer3 {
