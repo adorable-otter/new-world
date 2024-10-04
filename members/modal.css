@@ -194,6 +194,7 @@ p {
 #modalContent5 {
     position: absolute;
     background-image: url('https://social-phinf.pstatic.net/20210112_218/1610429401515GVNBd_PNG/8.png');
+    background-size: cover;
     width: 600px;
     height: 525px;
     padding: 15px;
