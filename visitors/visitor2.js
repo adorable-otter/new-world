@@ -1,48 +1,53 @@
-
+import { db, collection, doc, addDoc, getDocs, deleteDoc, setDoc, query, orderBy } from '../db.js'
 
 const nameInput = document.getElementsByClassName('user-input')[0];
 const commentInput = document.getElementsByClassName('user-input')[1];
 const addBtn = document.getElementById('addBtn');
-const container = document.getElementById('container');
 const book = document.querySelector('ul')
 const comments = new Map();
 
-document.addEventListener('DOMContentLoaded', () => {
-    addBtn.addEventListener('click', addComment);
+document.addEventListener('DOMContentLoaded', async () => {
+    await readComments();
+    addBtn.addEventListener('click', saveComment);
     commentInput.addEventListener('keydown', function (event) {
         if (event.key === 'Enter') {
-            addComment();
+            saveComment();
         }
     });
     nameInput.addEventListener('keydown', function (event) {
         if (event.key === 'Enter') {
-            addComment();
+            saveComment();
         }
     });
     book.addEventListener('click', handleBtnClickInPageHeader);
-    createBookPage({ name: '정청', comment: '어이 브라더' });
+    // createBookPage({ name: '정청', comment: '어이 브라더' });
 });
 
-function handleBtnClickInPageHeader(e) {
+async function handleBtnClickInPageHeader(e) {
     const target = e.target;
     const name = target.dataset.name;
     const li = target.closest('li');
-    const commentId = Number(li.dataset.id);
+    const commentId = li.dataset.id;
     const comment = li.querySelector('textarea[data-name=comment]')
 
     if (target.nodeName === 'BUTTON') {
         if (name === 'delete') {
+            await deleteDoc(doc(db, 'visitors', li.dataset.id));
             li.remove();
             comments.delete(commentId);
             return;
         } else if (name === 'update') {
             comment.readOnly = false;
         } else if (name === 'save') {
+            const commentObj = comments.get(commentId);
+            if (comment.value !== commentObj.comment) {
+                commentObj.comment = comment.value;
+                await setDoc(doc(db, 'visitors', commentId), commentObj);
+            }
             comment.readOnly = true;
-            comments.set(commentId, comment.value);
         } else if (name === 'cancel') {
             comment.readOnly = true;
-            comment.value = comments.get(commentId);
+            comment.value = comments.get(commentId).comment;
         }
         toggleAllBtn(li);
     }
@@ -57,30 +62,43 @@ function toggleAllBtn(li) {
     ]
     buttons.forEach((btn) => $(btn).toggle());
 }
-function addComment() {
-    const name = nameInput.value;
-    const comment = commentInput.value;
-    if (name && comment) {
-        createBookPage({ name, comment });
-    } else {
-        alert('이름과 댓글을 모두 입력하세요!');
+
+async function readComments() {
+    const visitors = collection(db, "visitors")
+    const docs = await getDocs(query(visitors, orderBy("created", "desc")));
+    docs.forEach((doc) => {
+        const page = createBookPage({ ...doc.data(), docId: doc.id });
+        document.querySelector('ul').appendChild(page);
+        comments.set(doc.id, doc.data());
+    });
+}
+
+async function saveComment() {
+    const data = {
+        name: nameInput.value,
+        comment: commentInput.value,
+        created: new Date().getTime()
     }
+    if (!data.name || !data.comment) {
+        alert('이름과 댓글을 모두 입력하세요!');
+        return;
+    }
+    const afterDoc = await addDoc(collection(db, 'visitors'), data);
+    const page = createBookPage({ ...data, docId: afterDoc.id });
+    document.querySelector('ul').prepend(page);
+    comments.set(afterDoc.id, data);
 }
 
-function createBookPage(inputData) {
+function createBookPage({ name, comment, created, docId }) {
     const page = document.createElement('li');
-    const id = new Date().getTime();
     page.classList.add('book__page');
-    page.setAttribute('data-id', id)
-    page.appendChild(createPageHeader(inputData));
-    page.appendChild(createPageContent(inputData));
-
-    document.querySelector('ul').appendChild(page);
-    debugger
-    comments.set(id, inputData.comment);
+    page.setAttribute('data-id', docId)
+    page.appendChild(createPageHeader({ name, created }));
+    page.appendChild(createPageContent({ comment }));
+    return page;
 }
 
-function createPageHeader({ name }) {
+function createPageHeader({ name, created }) {
     const pageHeader = document.createElement('div');
     pageHeader.classList.add('page-header');
 
@@ -90,7 +108,7 @@ function createPageHeader({ name }) {
 
     const pageHeaderDate = document.createElement('div');
     pageHeaderDate.classList.add('page-header__date');
-    pageHeaderDate.textContent = `( ${yymmddhhmm()} )`;
+    pageHeaderDate.textContent = `( ${yymmddhhmm(created)} )`;
 
     const updateButton = document.createElement('button');
     updateButton.classList += 'btn btn_primary page-header__update';
@@ -140,8 +158,8 @@ function createPageContent({ comment }) {
     return pageContent;
 }
 
-function yymmddhhmm() {
-    const now = new Date();
+function yymmddhhmm(dateTime) {
+    const now = dateTime ? new Date(dateTime) : new Date();
     const year = now.getFullYear();
     const month = (now.getMonth() + 1).toString().padStart(2, '0');
     const day = now.getDate().toString().padStart(2, '0');
