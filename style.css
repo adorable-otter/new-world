@@ -27,7 +27,7 @@ body {
     min-height: 100vh;
 }
 
-.container {
+.con {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ body {
     width: 1200px;
 }
 
-.container>* {
+.con>* {
     width: 100%;
 }
 
