@@ -1,4 +1,5 @@
 const audio1=new Audio('Big_Sleep.mp3');
+// const audio1=new Audio('no-copyright.mp3');
 document.querySelector("#bgm").addEventListener("click",function(){
     
     
