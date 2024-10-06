@@ -55,6 +55,10 @@
     border: 1px solid gray;
 }
 
+.page-content__img_review {
+    background-position: center -40px;
+}
+
 .page-content__comment {
     padding: 25px;
     line-height: 1.5;
