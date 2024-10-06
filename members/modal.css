@@ -18,7 +18,7 @@ p {
 
 #modalContent1 {
     position: absolute;
-    background-image: url('https://img.notionusercontent.com/s3/prod-files-secure%2F5d82c672-a5e1-49b9-923f-df15a9ab105c%2F2e1bcd62-2bb6-4ad3-a670-d292efb215cf%2FNJ_BubbleGum_41.jpg/size/w=1420?exp=1728085989&sig=0KLoeWd9Q8s-cffxfxbothTRvOgLG5IZordnDn-iVpw');
+    background-image: url('../images/sang-bgi.jpg');
     background-size: 175% 175%;
     background-position: left;
     background-repeat: no-repeat;
