@@ -70,7 +70,7 @@ p {
 
 #modalContent2 {
     position: absolute;
-    background-image: url('https://img.freepik.com/vector-gratis/fondo-vaporwave-vintage-lineal_52683-58478.jpg');
+    background-image: url('../images/jeong-bgi.JPG');
     background-size: cover;
     background-position: center;
     width: 900px;
@@ -109,7 +109,7 @@ p {
 }
 
 #modalContent3 {
-    background-image: url('https://i.pinimg.com/236x/9e/dd/f9/9eddf95f1f34d524d6ef62a610be71f9.jpg'); /* 수정된 URL */
+    background-image: url('../images/jun-bgi.jpg'); /* 수정된 URL */
     background-size: 600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,7 +150,7 @@ p {
 }
 
 #modalContent4 {
-    background-image: url('https://i.namu.wiki/i/DkJUgg_J_bMT5KKV4IdAA1pPE1PAbFG0m1Cv2ApCM5pUtR3hOsaukLP3Wg3PZqSDd6tnZnq2dYfhVViu6iwUcHl0tOTxQtgZB1BQt7ZnLd58TfIdeo9Mc3jCyqYQIowZRcSjirej8KCWIu57OuAqow.webp');
+    background-image: url('../images/kang-bgi.webp');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -193,7 +193,7 @@ p {
 
 #modalContent5 {
     position: absolute;
-    background-image: url('https://social-phinf.pstatic.net/20210112_218/1610429401515GVNBd_PNG/8.png');
+    background-image: url('../images/shin-bgi.png');
     background-size: cover;
     width: 600px;
     height: 525px;
